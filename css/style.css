@@ -1,0 +1,117 @@
+.container-login{
+    height: 100vh; /* alto completo de la ventana */
+    width: 100vw;  /* ancho completo de la ventana */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('../img/herramientas_dos.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-contenido{
+    width: 400px;
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-contenido img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.login-formulario{
+    padding: 15px 20px;
+}
+
+.login-formulario h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-azul);
+}
+
+.login-formulario p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.formulario-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-icon{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.input-icon input{
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid var(--color-azul-ceniza);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.input-icon input:focus{
+    border-color: var(--color-cuatro);
+    box-shadow: 0 0 5px var(--color-cuatro);
+}
+
+.input-icon .icon{
+    background-color: var(--color-azul-ceniza);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formulario-contenido button{
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--color-azul);
+    border-radius: 5px;
+    border: 1px solid var(--border-azul);
+    color: var(--color-blanco);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario-contenido button:hover{
+    background-color: var(--color-azul-hover);
+    border: 1px solid var(--border-azul-hover);
+}
+
+.formulario-contenido a{
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-azul);
+}
+
+.formulario-contenido a:hover{
+    color: var(--color-azul-hover);
+}
+
+@media(max-width: 450px){
+    .login-contenido{
+        width: 95%;
+    }
+}
